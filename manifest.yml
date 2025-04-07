@@ -8,3 +8,5 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
+#only a single pod can be created with above manifest
+# to create multiple pods, we can use a deployment
