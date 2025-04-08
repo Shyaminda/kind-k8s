@@ -1,0 +1,12 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: k8s-lab
+  region: us-east-1
+
+nodeGroups:
+  - name: worker-group
+    instanceType: t2.micro
+    desiredCapacity: 2
+    volumeSize: 10
