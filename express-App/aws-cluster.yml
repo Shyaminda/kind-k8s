@@ -1,0 +1,12 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: k8s-labs
+  region: us-east-1
+
+nodeGroups:
+  - name: t3-medium-group
+    instanceType: t3.medium
+    desiredCapacity: 2
+    volumeSize: 10
